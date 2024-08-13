@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+#wrap{
+      /* height: 100vh; */
+     overflow-x: hidden;
+    /*  overflow-y: auto; */
+    perspective: 10px; /*it will unable 3d axis */
+    height: 100vh;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;  
+    height: 100%;
+    z-index: -1;  
+    
+}
+.background{
+    /* justify-content: center;
+    align-items: center; */
+    transform: translateZ(-90px) scale(10.5);
+}
+.foreground{
+    transform: translateZ(-50px) scale(2.5) ;
+    /* justify-content: center; */
+    margin-top: 1300px;
+    /* box-shadow: 5px 5px 5px white ,-5px -5px 5px white;    */
+}
+
+/* #foreg{
+    justify-self: end;
+} */
+ .text{
+    display: flex;
+    align-items: baseline;
+ }
+
+h1{ 
+    position: absolute;
+    font-size: 6rem ;
+    top: 17rem;    
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* left: 50%; */
+    transform: translateX( -50%);
+    letter-spacing: 4px;
+
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgba(218, 212, 212, 0.3);
+    /* background-color: aliceblue; */
+}
+
+/* h5{
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px whitesmoke;
+} */
+
+
+
+.background, .foreground{
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;   
+}
+section{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 250, 250);
+    padding: 5rem 0;
+
+}
+
+
+.secheading{
+font-size: 3rem;
+padding: 0 10rem;
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg{
+    position:relative;
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.desc{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    padding: 0.2rem 2.5rem;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+
+}
+
+.bg1{
+    background-image: url(spaceship.jpg);
+}
+ 
+.bg2{
+    background-image: url(moon.webp);
+}
+
+.bg3{
+    background-image: url(nebula2.jpg);
+}
+
+ 
